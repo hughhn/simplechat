@@ -4,9 +4,27 @@
     android:layout_height="match_parent"
     tools:context="${relativePackage}.${activityClass}" >
 
-    <TextView
+    <EditText
+        android:id="@+id/etChat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/btn"
+        android:ems="10"
+        android:hint="@string/chat_hint"
+        android:inputType="textMultiLine" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/etChat"
+        android:text="@string/send_btn_label" />
 
 </RelativeLayout>

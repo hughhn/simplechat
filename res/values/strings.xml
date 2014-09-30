@@ -3,5 +3,7 @@
 
     <string name="app_name">SimpleChat</string>
     <string name="hello_world">Hello world!</string>
+    <string name="chat_hint">Say anything</string>
+    <string name="send_btn_label">Send</string>
 
 </resources>
